@@ -22,7 +22,7 @@
         margin-right: 25px;
         @include media(1400){
             flex-direction: column-reverse;
-            row-gap: 28px;
+            row-gap: 10px;
             align-items: flex-start;
         }
     }
@@ -124,7 +124,7 @@
         right: 0;
         height: calc(100vh - 114px);
         background: linear-gradient(110.21deg, #2B86CF 0%, #084287 100%);
-        padding: 38px 0;
+        padding: 18px 0;
         opacity: 0;
         visibility: hidden;
         transition: 300ms ease;
