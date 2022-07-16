@@ -73,3 +73,39 @@ ul,li{
         transform: translateX(19em) skewX(-45deg)
     }
 }
+.subtitle{
+    font-family: VenusRisingCyrillic;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 139.02%;
+    text-transform: uppercase;
+    color: #131720;
+    position: relative;
+    padding-left: 110px;
+    @include media(768){
+        padding-left: 0;
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 139.02%;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 81px;
+        height: 14px;
+        background: #D63546;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include media(768){
+            bottom: 0;
+            top: 100%;
+            transform: translateY(0);
+        }
+    }
+    &.white{
+        color: #FFFFFF;
+    }
+}

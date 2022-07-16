@@ -107,6 +107,9 @@
         font-weight: 400;
         font-size: 13px !important;
         line-height: 139.02%;
+        @include media(375){
+            width: 100%;
+        }
         &::before{
             content: '';
             position: absolute;
