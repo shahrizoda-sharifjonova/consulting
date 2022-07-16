@@ -1,14 +1,35 @@
 @font-face {
-	font-family: EBGaramond;
+	font-family: AppleGaramond;
 	font-display: swap;
-	src: url("../fonts/EBGaramond-Regular.woff2") format("woff2"), url("../fonts/EBGaramond-Regular.woff") format("woff");
+	src: url("../fonts/AppleGaramond-Light.woff2") format("woff2"), url("../fonts/AppleGaramond-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: AppleGaramond;
+	font-display: swap;
+	src: url("../fonts/AppleGaramond-Regular.woff2") format("woff2"), url("../fonts/AppleGaramond-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
-	font-family: EBGaramond;
+	font-family: AppleGaramond;
 	font-display: swap;
-	src: url("../fonts/EBGaramond-Regular.woff2") format("woff2"), url("../fonts/EBGaramond-Regular.woff") format("woff");
+	src: url("../fonts/AppleGaramond-Light.woff2") format("woff2"), url("../fonts/AppleGaramond-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: AppleGaramond;
+	font-display: swap;
+	src: url("../fonts/AppleGaramond-Regular.woff2") format("woff2"), url("../fonts/AppleGaramond-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Garamond;
+	font-display: swap;
+	src: url("../fonts/Garamond-Regular.woff2") format("woff2"), url("../fonts/Garamond-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -20,10 +41,17 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: Montserrat;
+	font-family: Garamond;
 	font-display: swap;
-	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+	src: url("../fonts/Garamond-Regular.woff2") format("woff2"), url("../fonts/Garamond-Regular.woff") format("woff");
 	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: TTNorms;
+	font-display: swap;
+	src: url("../fonts/TTNorms-Light.woff2") format("woff2"), url("../fonts/TTNorms-Light.woff") format("woff");
+	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
@@ -48,9 +76,9 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: TTNorms;
+	font-family: Montserrat;
 	font-display: swap;
-	src: url("../fonts/TTNorms-Light.woff2") format("woff2"), url("../fonts/TTNorms-Light.woff") format("woff");
-	font-weight: 300;
+	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }
