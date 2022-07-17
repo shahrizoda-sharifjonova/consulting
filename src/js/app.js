@@ -22,6 +22,30 @@ new Swiper(".intro__swiper", {
     },
   });
 
+
+new Swiper(".clients__swiper", {
+    modules: [Pagination, Navigation],
+    slidesPerView: 2,
+    autoplay:{
+        delay: 2000,
+    },
+    pagination:{
+        el: ".clients__pagination",
+    },
+    navigation: {
+      nextEl: ".clients__button-next",
+      prevEl: ".clients__button-prev",
+    },
+    breakpoints:{
+      1200:{
+        slidesPerView: 4,
+      },
+      768:{
+        slidesPerView: 3,
+      }
+    }
+  });
+
 const menu = document.querySelector('.menu');
 const headerList = document.querySelector('.header__list');
 const body = document.querySelector('body');

@@ -5,6 +5,7 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     font-family: AppleGaramond;
+    scroll-behavior: smooth;
     &:focus,
     &:active{
         outline: none;
@@ -94,6 +95,7 @@ ul,li{
     color: #131720;
     position: relative;
     padding-left: 110px;
+    z-index: 99 !important;
     @include media(768){
         padding-left: 0;
         padding-bottom: 20px;

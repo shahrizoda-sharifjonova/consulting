@@ -34,6 +34,7 @@
         height: 680px;
         max-width: 845px;
         width: 100%;
+        z-index: -1;
         @include media(1400){
             max-width: 100%;
         }
@@ -44,6 +45,7 @@
     }
     &__title{
         padding-left: 32px;
+        z-index: -2;
         @include media(1800){
             padding-left: 0;
         }
