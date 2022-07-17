@@ -27,7 +27,7 @@
         border-radius: 10px;
         padding: 36px 0 50px 50px;
         z-index: 9999;
-        margin-bottom: -270px;
+        margin-bottom: -230px;
         cursor: pointer;
         @include media(1400){
             margin-bottom: 0;
@@ -72,11 +72,13 @@
             }
         }
         &-pagination{
-            display: flex;
             justify-content: center;
             align-items: stretch;
             column-gap: 10px;
             margin-top: 34px;
+            @include media(1400){
+                display: flex !important;
+            }
             &-bullet{
                 border: 2px solid #FFFFFF;
                 border-radius: 90px;
