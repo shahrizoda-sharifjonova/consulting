@@ -80,6 +80,9 @@ ul,li{
     font-size: 100px;
     line-height: 124px;
     color: #E6EEFB;
+    &.dark{
+        color: #032344;
+    }
 }
 .subtitle{
     font-family: VenusRisingCyrillic;

@@ -52,7 +52,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        transition: 500ms ease;
         @include media(1200){
             width: calc(33.3333% - 30px);
         }
@@ -72,10 +71,8 @@
             padding: 17px 21px;
         }
         &.blue{
-            transition: 500ms ease !important;
             background: linear-gradient(0deg, #E6EEFB, #E6EEFB), #2377BA;
             &:hover{
-                transition: 500ms ease;
                 background: linear-gradient(110.21deg, #2B86CF 0%, #2368BA 100%), #2377BA;
                 .services__img{
                     background: #FFFFFF;
