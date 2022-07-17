@@ -2,9 +2,26 @@
     background: #E6EEFB;
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
     @include media(992){
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        background: url(../img/news-before.svg) center / cover no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 330px;
+        height: 364px;
+        right: 162px;
+        @include media(1400){
+            top: 56px;
+            right: 0;
+            width: 180px;
+            transform: translateY(0);
+        }
     }
     &__title{
         color: #fff !important;
@@ -60,6 +77,7 @@
         overflow: hidden;
         padding: 20px;
         margin-left: -20px;
+        border-radius: 10px;
         @include media(768){
             max-width: 335px;
             padding: 20px 0px;
@@ -93,12 +111,16 @@
         }
     }
     &__slide{
+        cursor: pointer;
         background: #FFFFFF;
         box-shadow: 0px 5px 13px rgb(30 35 66 / 15%);
         border-radius: 10px;
         padding: 32px 28px 32px 22px;
         max-width: 328px;
         width: 100%; 
+        @include media(768){
+            max-width: none !important;
+        }
     }
     &__date{
         background: #2377BA;
@@ -125,6 +147,15 @@
         max-width: 278px;
         width: 100%;
     }
+    &__link{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 139.02%;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #84A0D6;
+        letter-spacing: 1.5px;
+    }
     &__buttons{
         display: flex;
         justify-content: space-between;
@@ -135,21 +166,63 @@
         &-prev{
             width: 30px;
             height: 30px;
-            background: url(../img/news-button-prev.svg) center / cover no-repeat;
             cursor: pointer;
             margin-left: -60px;
+            transition: 300ms ease;
             &.swiper-button-disabled{
                 opacity: 0.6;
+                cursor: auto;
+                &:hover{
+                    svg{
+                        path{
+                            fill: #A6B4CB;
+                        }
+                    }
+                }
+            }
+            svg{
+                path{
+                    transition: 300ms ease;
+                    fill: #A6B4CB;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #D63546;
+                    }
+                }
             }
         }
         &-next{
             width: 30px;
             height: 30px;
-            background: url(../img/news-button-next.svg) center / cover no-repeat;
             cursor: pointer;
             margin-right: -25px;
+            transition: 300ms ease;
             &.swiper-button-disabled{
+                cursor: auto;
                 opacity: 0.6;
+                &:hover{
+                    svg{
+                        path{
+                            fill: #A6B4CB;
+                        }
+                    }
+                }   
+            }
+            svg{
+                path{
+                    transition: 300ms ease;
+                    fill: #A6B4CB;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #D63546;
+                    }
+                }
             }
         }
     }

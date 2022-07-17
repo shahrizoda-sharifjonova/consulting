@@ -117,19 +117,59 @@
         &-prev{
             width: 30px;
             height: 30px;
-            background: url(../img/intro-button-prev.svg) center / cover no-repeat;
             cursor: pointer;
             &.swiper-button-disabled{
                 opacity: 0.6;
+                cursor: auto;
+                &:hover{
+                    svg{
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+            svg{
+                path{
+                    transition: 300ms ease;
+                    fill: #fff;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #D63546;
+                    }
+                }
             }
         }
         &-next{
             width: 30px;
             height: 30px;
-            background: url(../img/intro-button-next.svg) center / cover no-repeat;
             cursor: pointer;
             &.swiper-button-disabled{
                 opacity: 0.6;
+                cursor: auto;
+                &:hover{
+                    svg{
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+            svg{
+                path{
+                    transition: 300ms ease;
+                    fill: #fff;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #D63546;
+                    }
+                }
             }
         }
     }

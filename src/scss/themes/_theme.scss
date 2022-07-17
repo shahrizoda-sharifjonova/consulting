@@ -50,6 +50,7 @@ ul,li{
     align-items: center;
     position: relative;
     overflow: hidden;
+    transition: 300ms ease;
     &::before{
         content: '';
         position: absolute;
@@ -61,6 +62,7 @@ ul,li{
         transform: translateX(-4em) skewX(-45deg);
     }
     &:hover{
+        background: #B91526;
         &::before{
             animation: move-light .7s;
         }

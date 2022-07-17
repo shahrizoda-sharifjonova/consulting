@@ -50,7 +50,7 @@ new Swiper(".clients__swiper", {
 new Swiper(".news__swiper", {
   modules: [Pagination, Navigation],
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 40,
   pagination:{
       el: ".news__pagination",
   },
@@ -61,6 +61,7 @@ new Swiper(".news__swiper", {
   breakpoints:{
     768:{
       slidesPerView: 2,
+      spaceBetween: 30,
     }
   }
 });

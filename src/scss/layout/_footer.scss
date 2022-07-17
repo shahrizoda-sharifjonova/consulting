@@ -115,6 +115,11 @@
         line-height: 19px;
         text-decoration-line: underline;
         color: #FFFFFF;
+        transition: 300ms ease;
+        &:hover{
+            text-decoration: none;
+            color: #D63546;
+        }
     }
     &__up{
         position: absolute;
@@ -128,8 +133,21 @@
             right: 20px;
             width: 53px;
         }
-        img{
-            width: 100%;
+        svg{
+            rect{
+                fill: #D63546;
+                transition: 300ms ease;
+            }
+            path{
+                fill: #fff;
+            }
+        }
+        &:hover{
+            svg{
+                rect{
+                    fill: #B91526;
+                }
+            }
         }
     }
 }
