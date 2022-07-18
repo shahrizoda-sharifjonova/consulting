@@ -1,0 +1,26 @@
+.top{
+    padding-top: 20px;
+    padding-bottom: 58px;
+    background: url(../img/top-bg.png) top / cover no-repeat;
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 3px;
+        margin-bottom: 53px;
+    }
+    &__span, &__link{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+    &__title{
+        font-family: VenusRisingCyrillic;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 136.02%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
