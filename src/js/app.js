@@ -91,6 +91,30 @@ new Swiper(".trust__swiper", {
 });
 
 
+new Swiper(".licenses__swiper", {
+  modules: [Pagination, Navigation],
+  slidesPerView: 2,
+  autoplay:{
+      delay: 2000,
+  },
+  pagination:{
+      el: ".licenses__pagination",
+  },
+  navigation: {
+    nextEl: ".licenses__button-next",
+    prevEl: ".licenses__button-prev",
+  },
+  breakpoints:{
+    1200:{
+      slidesPerView: 4,
+    },
+    992:{
+      slidesPerView: 3,
+    }
+  }
+});
+
+
 new Swiper(".new__swiper", {
   modules: [Pagination],
   slidesPerView: 1,

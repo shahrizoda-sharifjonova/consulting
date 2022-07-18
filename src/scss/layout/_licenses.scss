@@ -1,0 +1,94 @@
+.licenses{
+    padding-bottom: 100px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 17px;
+    }
+    &__button{
+        &-prev{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            svg{
+                path{
+                    fill: #A6B0C0;
+                    transition: 300ms ease;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #D63546;
+                    }
+                }
+            }
+            &.swiper-button-disabled{
+                opacity: 0.6;
+                cursor: auto;
+                svg{
+                    path{
+                        fill: #A6B0C0;
+                    }
+                }
+            }
+        }
+        &-next{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            svg{
+                path{
+                    fill: #A6B0C0;
+                    transition: 300ms ease;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #D63546;
+                    }
+                }
+            }
+            &.swiper-button-disabled{
+                opacity: 0.6;
+                cursor: auto;
+                svg{
+                    path{
+                        fill: #A6B0C0;
+                    }
+                }
+            }
+        }
+    }
+    &__slider{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .swiper{
+        width: 100%;
+        overflow: hidden;
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        }
+        &-pagination{
+            display: none;
+        }
+        &-slide{
+            img{
+                @include media(768){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

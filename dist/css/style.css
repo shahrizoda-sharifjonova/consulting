@@ -2623,6 +2623,114 @@
   fill: #D63546;
 }
 
+.licenses {
+  padding-bottom: 100px;
+}
+
+.licenses__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.licenses__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 17px;
+     -moz-column-gap: 17px;
+          column-gap: 17px;
+}
+
+.licenses__button-prev {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.licenses__button-prev svg path {
+  fill: #A6B0C0;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.licenses__button-prev:hover svg path {
+  fill: #D63546;
+}
+
+.licenses__button-prev.swiper-button-disabled {
+  opacity: 0.6;
+  cursor: auto;
+}
+
+.licenses__button-prev.swiper-button-disabled svg path {
+  fill: #A6B0C0;
+}
+
+.licenses__button-next {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.licenses__button-next svg path {
+  fill: #A6B0C0;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.licenses__button-next:hover svg path {
+  fill: #D63546;
+}
+
+.licenses__button-next.swiper-button-disabled {
+  opacity: 0.6;
+  cursor: auto;
+}
+
+.licenses__button-next.swiper-button-disabled svg path {
+  fill: #A6B0C0;
+}
+
+.licenses__slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.licenses .swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.licenses .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.licenses .swiper-pagination {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -3550,6 +3658,10 @@ li {
   }
 
   .company__img {
+    width: 100%;
+  }
+
+  .licenses .swiper-slide img {
     width: 100%;
   }
 
