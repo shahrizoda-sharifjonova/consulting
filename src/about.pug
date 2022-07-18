@@ -11,20 +11,22 @@ html(lang="en")
             include components/header 
             +header
             +list
-            .main
-                .top 
-                    .top__body.container 
-                        ul.top__list 
-                            a(href="index.html").top__link Главная
-                            span.top__span /
-                            a(href="about.html").top__link о компании
-                        h1.top__title о компании
+            .top 
+                .top__body.container 
+                    ul.top__list 
+                        a(href="index.html").top__link Главная
+                        span.top__span /
+                        a(href="about.html").top__link о компании
+                    h1.top__title о компании
+            .main#about__main
                 include components/company 
-                +company    
-                include components/contacts 
-                +contacts       
-                include components/feedback 
-                +feedback 
+                +company
+                include components/trust 
+                +trust 
+            include components/contacts 
+            +contacts       
+            include components/feedback 
+            +feedback 
             include components/footer 
             +footer 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

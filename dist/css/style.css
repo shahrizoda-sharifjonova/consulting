@@ -2288,6 +2288,146 @@
   width: calc(33.333% - 20px);
 }
 
+.company {
+  padding-top: 17px;
+  padding-bottom: 80px;
+}
+
+.company__title {
+  margin-bottom: 10px;
+  color: #fff !important;
+  text-align: right;
+}
+
+.company__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 28px;
+     -moz-column-gap: 28px;
+          column-gap: 28px;
+  margin-bottom: 28px;
+}
+
+.company__texts {
+  max-width: 586px;
+  width: 100%;
+}
+
+.company__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170.02%;
+  color: #131720;
+  margin-bottom: 25px;
+}
+
+.company__subtitle {
+  font-family: VenusRisingCyrillic;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 170.02%;
+  color: #131720;
+  margin-bottom: 25px;
+}
+
+.company__li {
+  list-style: disc !important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170.02%;
+  color: #131720;
+}
+
+.company__img img {
+  width: 100%;
+}
+
+.company__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-column-gap: 150px;
+     -moz-column-gap: 150px;
+          column-gap: 150px;
+  margin-top: 60px;
+}
+
+.company__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 256px;
+  width: 256px;
+  height: 256px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+          box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+  border-radius: 800px;
+}
+
+.company__item.blue {
+  background: -o-linear-gradient(339.79deg, #2B86CF 0%, #2368BA 100%), #2377BA;
+  background: linear-gradient(110.21deg, #2B86CF 0%, #2368BA 100%), #2377BA;
+}
+
+.company__item.red {
+  background: #D63546;
+}
+
+.company__text {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.company__text.blue {
+  color: #2377BA;
+}
+
+.company__text span {
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+
+.company__p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139.02%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.company__p.black {
+  color: #131720;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2452,6 +2592,10 @@ li {
 
 .subtitle.white {
   color: #FFFFFF;
+}
+
+#about__main {
+  background: #E6EEFB;
 }
 
 @media (min-width: 576px) {
@@ -2765,6 +2909,11 @@ li {
   .new .swiper-pagination {
     margin-top: 40px;
   }
+
+  .company {
+    padding-top: 38px;
+    padding-bottom: 75px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2882,6 +3031,14 @@ li {
   .contact::after {
     width: 150px;
   }
+
+  .company__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2986,6 +3143,17 @@ li {
   .new__item:nth-of-type(8),
   .new__item:nth-of-type(9) {
     display: none;
+  }
+
+  .company__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 48px;
   }
 }
 
@@ -3119,6 +3287,27 @@ li {
   .new__item {
     max-width: calc(50% - 7.5px);
     width: calc(50% - 7.5px);
+  }
+
+  .company__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170.02%;
+    margin-bottom: 15px;
+  }
+
+  .company__subtitle {
+    font-size: 20px;
+  }
+
+  .company__li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170.02%;
+  }
+
+  .company__img {
+    width: 100%;
   }
 
   .subtitle {
