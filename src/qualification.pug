@@ -12,15 +12,8 @@ html(lang="en")
             +header
             +list
             .main
-                .top 
-                    .top__body.container 
-                        ul.top__list 
-                            a(href="index.html").top__link Главная
-                            span.top__span /
-                            a(href="services.html").top__link Услуги
-                        h1.top__title УСЛУГИ
-                include components/service 
-                +service 
+                include components/rates 
+                +rates     
                 include components/contacts 
                 +contacts       
                 include components/feedback 
