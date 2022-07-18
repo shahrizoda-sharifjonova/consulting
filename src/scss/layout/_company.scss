@@ -1,6 +1,34 @@
 .company{
     padding-top: 17px;
     padding-bottom: 80px;
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: '';
+        position: absolute;
+        background: url(../img/trust-before.svg) center / cover no-repeat;
+        width: 330px;
+        height: 364px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        @include media(1400){
+            display: none;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background: url(../img/trust-before.svg) center / cover no-repeat;
+        width: 330px;
+        height: 364px;
+        top: 300px;
+        right: 150px;
+        z-index: -1;
+        @include media(1400){
+            display: none;
+        }
+    }
     @include media(1400){
         padding-top: 38px;
         padding-bottom: 75px;
@@ -76,6 +104,9 @@
         align-items: stretch;
         column-gap: 150px;
         margin-top: 60px;
+        @include media(1400){
+            column-gap: 80px;
+        }
         @include media(992){
             flex-direction: column;
             align-items: center;

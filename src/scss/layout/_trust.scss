@@ -1,0 +1,174 @@
+.trust{
+    position: relative;
+    padding-bottom: 136px;
+    z-index: 1;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: -100px;
+        background: url(../img/trust-before.svg) center / cover no-repeat;
+        width: 330px;
+        height: 364px;
+        z-index: -1;
+        @include media(1200){
+            display: none;
+        }
+    }
+    @include media(1400){
+        padding-bottom: 80px;
+        z-index: 999;
+        margin-top: -1px;
+    }
+    &__title{
+        color: #fff !important;
+    }
+    &__content{
+        background: #FFFFFF;
+        box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+        border-radius: 10px;
+        padding: 36px 0 50px 50px;
+        z-index: 9999;
+        cursor: pointer;
+        @include media(992){
+            padding: 36px 0px 30px 30px;
+        }
+        @include media(425){
+            padding-left: 16px;
+        }
+    }
+    &__slider{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .swiper{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        &-wrapper{
+            display: flex;
+            width: max-content;
+            align-items: flex-end;
+            @include media(992){
+                align-items: center;
+            }
+        }
+        &-slide{
+            @include media(575){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                @include media(992){
+                    width: 150px;
+                }
+                @include media(575){
+                    width: 110px;
+                }
+            }
+        }
+        &-pagination{
+            justify-content: center;
+            align-items: stretch;
+            column-gap: 10px;
+            margin-top: 34px;
+            @include media(1400){
+                display: flex !important;
+            }
+            &-bullet{
+                border: 2px solid #FFFFFF;
+                border-radius: 90px;
+                width: 10px;
+                height: 10px;
+                &-active{
+                    background: #FFFFFF;
+                }
+            }
+        }
+    }
+    &__title{
+        text-align: right;
+    }
+    &__top{
+        margin-top: -60px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(1400){
+            margin-top: 0;
+        }
+    }
+    &__subtitle{
+        z-index: 999999 !important;
+        display: flex;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: stretch;
+        column-gap: 17px;
+    }
+    &__button{
+        &-prev{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            &.swiper-button-disabled{
+                opacity: 0.6;
+                cursor: auto;
+                &:hover{
+                    svg{
+                        path{
+                            fill: #A6B0C0;
+                        }
+                    }
+                }
+            }
+            svg{
+                path{
+                    transition: 300ms ease;
+                    fill: #A6B0C0;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #D63546;
+                    }
+                }
+            }
+        }
+        &-next{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            &.swiper-button-disabled{
+                opacity: 0.6;
+                cursor: auto;
+                &:hover{
+                    svg{
+                        path{
+                            fill: #A6B0C0;
+                        }
+                    }
+                }
+            }
+            svg{
+                path{
+                    transition: 300ms ease;
+                    fill: #A6B0C0;
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #D63546;
+                    }
+                }
+            }
+        }
+    }
+}
