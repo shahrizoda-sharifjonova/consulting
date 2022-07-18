@@ -66,6 +66,20 @@ new Swiper(".news__swiper", {
   }
 });
 
+
+new Swiper(".new__swiper", {
+  modules: [Pagination],
+  slidesPerView: 1,
+  spaceBetween: 40,
+  pagination: {
+    el: ".new__pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+});
+
 const menu = document.querySelector('.menu');
 const headerList = document.querySelector('.header__list');
 const body = document.querySelector('body');

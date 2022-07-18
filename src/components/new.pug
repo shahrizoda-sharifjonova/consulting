@@ -1,0 +1,29 @@
+mixin newItem()
+    .new__item 
+        span.news__date 23.12.2021
+        p.news__p Вам налог! Что делать , если кадастровая оценка квартиры завышена?
+        a(href="about.html").news__link Подробнее
+mixin newSlide()
+    .new__slide.swiper-slide 
+        +newItem 
+        +newItem 
+        +newItem 
+        +newItem 
+        +newItem 
+        +newItem 
+        +newItem 
+        +newItem 
+        +newItem
+mixin new()
+    section.section.new 
+        .new__body.container    
+            h1.new__title.title.disable-xxl новости
+            .new__content 
+                .new__slider.slider
+                    .new__swiper.swiper 
+                        .new__swiper-wrapper.swiper-wrapper 
+                            +newSlide()
+                            +newSlide()
+                            +newSlide()
+                            +newSlide()
+                    .swiper-pagination.new__pagination

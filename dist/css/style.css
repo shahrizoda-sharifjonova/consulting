@@ -2178,6 +2178,116 @@
   height: 100%;
 }
 
+.new {
+  background: #E6EEFB;
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+.new__title {
+  color: #fff !important;
+  margin-right: -123px;
+  text-align: right;
+}
+
+.new__slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.new .swiper {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.new .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.new .swiper-pagination {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 11px;
+     -moz-column-gap: 11px;
+          column-gap: 11px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.new .swiper-pagination-bullet {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#FFFFFF)), #2377BA;
+  background: -o-linear-gradient(bottom, #FFFFFF, #FFFFFF), #2377BA;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #2377BA;
+  border-radius: 90px;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 139.02%;
+  text-align: center;
+  color: #131720;
+}
+
+.new .swiper-pagination-bullet-active {
+  color: #FFFFFF;
+  background: -o-linear-gradient(339.79deg, #2B86CF 0%, #2368BA 100%), #2377BA;
+  background: linear-gradient(110.21deg, #2B86CF 0%, #2368BA 100%), #2377BA;
+}
+
+.new__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 40px;
+}
+
+.new__item {
+  cursor: pointer;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 13px rgba(30, 35, 66, 0.15);
+          box-shadow: 0px 3px 13px rgba(30, 35, 66, 0.15);
+  border-radius: 10px;
+  padding: 32px 28px 32px 22px;
+  max-width: calc(33.333% - 20px);
+  width: calc(33.333% - 20px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2418,6 +2528,10 @@ li {
     width: 270px;
     height: 295px;
   }
+
+  .new__title {
+    text-align: left;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -2642,6 +2756,15 @@ li {
   .contact__adress:nth-of-type(3) {
     margin-bottom: 0;
   }
+
+  .new {
+    padding-top: 40px;
+    padding-bottom: 75px;
+  }
+
+  .new .swiper-pagination {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2853,6 +2976,17 @@ li {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
+  .new__item {
+    max-width: calc(50% - 15px);
+    width: calc(50% - 15px);
+  }
+
+  .new__item:nth-of-type(7),
+  .new__item:nth-of-type(8),
+  .new__item:nth-of-type(9) {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2973,6 +3107,18 @@ li {
 
   .news__slide {
     max-width: none !important;
+  }
+
+  .new__slide {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    row-gap: 30px;
+  }
+
+  .new__item {
+    max-width: calc(50% - 7.5px);
+    width: calc(50% - 7.5px);
   }
 
   .subtitle {
@@ -3225,6 +3371,20 @@ li {
     font-size: 22px;
     line-height: 23px;
   }
+
+  .new .swiper {
+    padding: 0;
+  }
+
+  .new__item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .new__item:nth-of-type(5),
+  .new__item:nth-of-type(6) {
+    display: none;
+  }
 }
 
 @media (max-width: 430px) {
@@ -3264,6 +3424,11 @@ li {
 
   .about__text {
     font-size: 40px;
+  }
+
+  .new .swiper-pagination-bullet {
+    width: 50px;
+    height: 50px;
   }
 }
 
