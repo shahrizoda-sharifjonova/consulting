@@ -34,5 +34,13 @@
             font-size: 28px;
             line-height: 136.02%;
         }
+        &.payment__subtitle{
+            font-size: 24px;
+            line-height: 136.02%;
+            @include media(768){
+                font-size: 18px;
+                line-height: 136.02%;
+            }
+        }
     }
 }

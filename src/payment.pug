@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            include components/header 
+            +header
+            +list
+            .main
+                .top 
+                    .top__body.container 
+                        ul.top__list 
+                            p #[a(href="index.html").top__link Главная] #[span.top__span /] #[a(href="payment.html").top__link Директор награжден ПОЧЕТНЫМ ЗНАКОМ Губернатора Самарской области "ЗА СЛУЖЕНИЕ ЛЮДЯМ"]
+                        h1.top__title.payment__subtitle Директор награжден ПОЧЕТНЫМ ЗНАКОМ Губернатора Самарской области "ЗА СЛУЖЕНИЕ ЛЮДЯМ"
+                include components/payment 
+                +payment 
+                include components/contacts 
+                +contacts       
+                include components/feedback 
+                +feedback 
+            include components/footer 
+            +footer 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        script(src="js/app.min.js") 
