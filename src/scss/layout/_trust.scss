@@ -2,6 +2,9 @@
     position: relative;
     padding-bottom: 136px;
     z-index: 1;
+    @include media(1400){
+        padding-bottom: 80px;
+    }
     &::before{
         content: '';
         position: absolute;
@@ -78,12 +81,12 @@
                 display: flex !important;
             }
             &-bullet{
-                border: 2px solid #FFFFFF;
+                border: 2px solid #94A1B5;
                 border-radius: 90px;
                 width: 10px;
                 height: 10px;
                 &-active{
-                    background: #FFFFFF;
+                    background: #94A1B5;
                 }
             }
         }

@@ -94,6 +94,7 @@ new Swiper(".trust__swiper", {
 new Swiper(".licenses__swiper", {
   modules: [Pagination, Navigation],
   slidesPerView: 2,
+  spaceBetween: 20,
   autoplay:{
       delay: 2000,
   },
@@ -110,6 +111,7 @@ new Swiper(".licenses__swiper", {
     },
     992:{
       slidesPerView: 3,
+      spaceBetween: 30,
     }
   }
 });

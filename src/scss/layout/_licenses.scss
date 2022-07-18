@@ -11,6 +11,9 @@
         justify-content: flex-end;
         align-items: center;
         column-gap: 17px;
+        @include media(1200){
+            display: none;
+        }
     }
     &__button{
         &-prev{
@@ -82,12 +85,28 @@
         }
         &-pagination{
             display: none;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            margin-top: 30px;
+            @include media(1200){
+                display: flex;
+            }
+            &-bullet{
+                width: 10px;
+                height: 10px;
+                border: 2px solid #94A1B5;
+                border-radius: 90px;
+                display: block;
+                &-active{
+                    background: #94A1B5;
+                }
+            }
         }
         &-slide{
+            width: 100%;
             img{
-                @include media(768){
-                    width: 100%;
-                }
+                width: 100%;
             }
         }
     }
