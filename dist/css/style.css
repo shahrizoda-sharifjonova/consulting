@@ -3397,6 +3397,74 @@
   color: #131720;
 }
 
+.no-webp .documents {
+  background: url(../img/documents-bg.png) center/cover no-repeat; }
+
+.documents {
+  padding-top: 58px;
+  padding-bottom: 75px;
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+}
+
+.documents::before {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 364px;
+  left: 80px;
+  bottom: 80px;
+  background: url(../img/about-before.svg) center/cover no-repeat;
+  z-index: -1;
+}
+
+.documents__title {
+  text-align: right;
+  margin-right: -150px;
+}
+
+.documents__subtitle::before {
+  top: 10px !important;
+  -webkit-transform: translateY(0) !important;
+      -ms-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
+.documents__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents__p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 170.02%;
+  color: #FFFFFF;
+}
+
+.documents__list {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  list-style-type: disc !important;
+  padding-left: 20px;
+}
+
+.documents__li {
+  list-style-type: disc !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170.02%;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -3684,6 +3752,11 @@ li {
 
   .cost__title {
     margin-left: 0;
+  }
+
+  .documents__title {
+    margin-right: 0;
+    text-align: left;
   }
 }
 
@@ -3990,6 +4063,10 @@ li {
 
   .objects::after {
     right: 0;
+  }
+
+  .documents::before {
+    display: none;
   }
 }
 
@@ -4325,6 +4402,36 @@ li {
 
   .service__item {
     width: calc(50% - 12.5px);
+  }
+
+  .documents__subtitle {
+    padding-left: 0 !important;
+    margin-bottom: 34px;
+    font-weight: 400 !important;
+    font-size: 22px !important;
+    line-height: 139.02% !important;
+  }
+
+  .documents__subtitle::before {
+    top: 100% !important;
+    bottom: 0 !important;
+  }
+
+  .documents__p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142.02%;
+  }
+
+  .documents__list {
+    margin-top: 10px;
+    margin-bottom: 22px;
+  }
+
+  .documents__li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170.02%;
   }
 }
 
@@ -4957,6 +5064,8 @@ li {
 .webp .top { background: url(../img/top-bg.webp) top/cover no-repeat; }
 
 .webp .rates::after { background: url(../img/intro-dots.webp) center/cover no-repeat; }
+
+.webp .documents { background: url(../img/documents-bg.webp) center/cover no-repeat; }
 
 @media (max-width: 768px) {
 

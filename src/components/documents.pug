@@ -1,4 +1,15 @@
 mixin documents()
     section.section.documents 
         .documents__body.container  
-            h1.documents__title.title.dark документы    
+            h1.documents__title.title.dark.disable-xxl документы        
+            h2.documents__subtitle.subtitle.white Список необходимых документов и информация для оценки
+            .documents__row
+                .documents__content 
+                    p.documents__p Специалисту-оценщику необходимо предоставить следующие документы:
+                    ul.documents__list 
+                        li.documents__li паспорт заказчика (страницы с основной информацией и пропиской)
+                        li.documents__li выписка из ЕГРН или свидетельство о государственной регистрации
+                        li.documents__li технический паспорт
+                    p.documents__p Список документов рекомендуется уточнить у менеджера, т.к. он может быть расширен или изменен в зависимости от недвижимого объекта, который предстоит оценить, и сложности задачи
+                .documents__img.disable-xl 
+                    img(src="@img/documents-img.png", alt="" draggable="false" loading="lazy")

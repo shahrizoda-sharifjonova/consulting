@@ -1,0 +1,84 @@
+.documents{
+    padding-top: 58px;
+    padding-bottom: 75px;
+    background: url(../img/documents-bg.png) center / cover no-repeat;
+    width: 100%;
+    position: relative;
+    isolation: isolate;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 330px;
+        height: 364px;
+        left: 80px;
+        bottom: 80px;
+        background: url(../img/about-before.svg) center  / cover no-repeat;
+        z-index: -1;
+        @include media(1400){
+            display: none;
+        }
+    }
+    &__title{
+        text-align: right;
+        margin-right: -150px;
+        @include media(1600){
+            margin-right: 0;
+            text-align: left;
+        }
+    }
+    &__subtitle{
+        @include media(992){
+            padding-left: 0 !important;
+            margin-bottom: 34px;
+            font-weight: 400 !important;
+            font-size: 22px !important;
+            line-height: 139.02% !important;
+        }
+        &::before{
+            top: 10px !important;
+            transform: translateY(0) !important;
+            @include media(992){
+                top: 100% !important;
+                bottom: 0 !important;
+            }
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 170.02%;
+        color: #FFFFFF;
+        @include media(992){
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 142.02%;
+        }
+    }
+    &__list{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        list-style-type: disc !important;
+        padding-left: 20px;
+        @include media(992){
+            margin-top: 10px;
+            margin-bottom: 22px;
+        }
+    }
+    &__li{
+        list-style-type: disc !important;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 170.02%;
+        color: #FFFFFF;
+        @include media(992){
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 170.02%;
+        }
+    }
+}
