@@ -1,4 +1,10 @@
 .enable{
+    &-1920{
+        display: none !important;
+        @include media(1920){
+            display: block !important;
+        }
+    }
     &-xxl{
         display: none !important;
         @include media(1400){
@@ -37,6 +43,11 @@
     }
 }
 .disable{
+    &-1920{
+        @include media(1920){
+            display: none !important;
+        }
+    }
     &-xxl{
         @include media(1400){
             display: none !important;

@@ -3,6 +3,40 @@
     background: linear-gradient(110.21deg, #2B86CF 0%, #084287 100%);
     padding-top: 20px;
     padding-bottom: 100px;
+    z-index: -3;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(110.21deg, rgba(43, 134, 207, 0.8) 0%, rgba(8, 66, 135, 0.8) 100%);
+        display: none;
+        z-index: -1;
+        @include media(1200){
+            display: block;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background: url(../img/intro-dots.png) center / cover no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 330px;
+        height: 364px;
+        left: 62px;
+        z-index: -1;
+        @include media(1400){
+            left: 0;
+        }
+        @include media(1200){
+            display: none;
+        }
+    }
     &__body{
         display: flex;
         justify-content: space-between;
@@ -23,11 +57,19 @@
         max-width: 546px;
         width: 100%;
         margin-bottom: 44px;
+        @include media(768){
+            margin-bottom: 40px;
+        }
     }
     &__content{
         display: flex;
         align-items: center;
         column-gap: 50px;
+        @include media(768){
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 30px;
+        }
     }
     &__item{
         display: flex;
@@ -45,8 +87,26 @@
         height: 100%;
         right: 0;
         top: 0;
+        z-index: -2;
+        object-fit: cover;
+        @include media(1800){
+            width: 800px;
+        }
+        @include media(1600){
+            width: 650px;
+        }
+        @include media(1200){
+            display: block;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
         img{
             height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
 }

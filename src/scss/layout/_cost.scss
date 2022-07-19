@@ -1,0 +1,13 @@
+.cost{
+    padding: 100px 0;
+    background: #E6EEFB;
+    position: relative;
+    z-index: -2;
+    &::before{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        background: url(../img/services-before.svg) center / cover no-repeat;
+        
+    }
+}
