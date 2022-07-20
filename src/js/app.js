@@ -117,6 +117,20 @@ new Swiper(".licenses__swiper", {
 });
 
 
+new Swiper(".projects__swiper", {
+  modules: [Pagination, Navigation],
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination:{
+    el: ".projects__pagination",
+  },
+  navigation: {
+    nextEl: ".projects__button-next",
+    prevEl: ".projects__button-prev",
+  },
+});
+
+
 new Swiper(".new__swiper", {
   modules: [Pagination],
   slidesPerView: 1,
