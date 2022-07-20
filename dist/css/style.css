@@ -3685,6 +3685,105 @@
   fill: #A6B0C0;
 }
 
+.asks {
+  padding: 100px 0;
+  background: #E6EEFB;
+}
+
+.asks__title {
+  margin-left: -115px;
+  color: #fff !important;
+}
+
+.asks__subtitle {
+  margin-bottom: 30px;
+}
+
+.asks__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 22px;
+}
+
+.asks .accordion {
+  background: #E6EEFB;
+  border-radius: 10px;
+}
+
+.asks .accordion__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px 15px 30px;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+          box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+  border-radius: 10px;
+  border: 2px solid #fff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 139.02%;
+  color: #131720;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.asks .accordion__button svg {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.asks .accordion__button.active {
+  background: #E6EEFB;
+  border: 2px solid #2377BA;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.asks .accordion__button.active svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.asks .accordion__content {
+  display: none;
+  background: #E6EEFB;
+  border: 2px solid #2377BA;
+  border-top: none;
+  padding: 0 30px 12px 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+.asks .accordion__p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 139.02%;
+  color: #131720;
+  max-width: 1100px;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -4296,6 +4395,10 @@ li {
   .projects::before {
     display: none;
   }
+
+  .asks {
+    padding: 75px 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -4694,6 +4797,18 @@ li {
     font-weight: 400;
     font-size: 16px;
     line-height: 170.02%;
+  }
+
+  .asks .accordion__button {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139.02%;
+    padding: 10px 20px;
+    text-align: left;
+  }
+
+  .asks .accordion__content {
+    padding: 0 20px 20px 20px;
   }
 }
 
