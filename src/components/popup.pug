@@ -13,10 +13,13 @@ mixin popup()
                     </clipPath>
                     </defs>
                 </svg> 
-            h2.popup__subtitle.subtitle оставить заявку
-            p.popup__desc Заполните форму и наш менеджер свяжется с вами в ближайшее время:
-            form(action="").popup__form
-                input(type="text" placeholder="Ваше имя").popup__input
-                input(type="number" placeholder="Номер телефона").popup__input
-                button(type="submit").popup__btn.btn отправить заявку
-                p.popup__text Оставляя заявку вы соглашаетесь с #[a(href="#!") Политикой конфидиальности]
+            .popup-left
+                h2.popup__subtitle.subtitle оставить заявку
+                p.popup__desc Заполните форму и наш менеджер свяжется с вами в ближайшее время:
+                form(action="").popup__form
+                    input(type="text" placeholder="Ваше имя" required).popup__input
+                    input(type="number" placeholder="Номер телефона" required).popup__input
+                    button(type="submit").popup__btn.btn.intro__btn отправить заявку
+                    p.popup__text Оставляя заявку вы соглашаетесь с #[a(href="#!") Политикой конфидиальности]
+            .popup__img 
+                img(src="@img/popup-img.png", alt="" draggable="false" loading="lazy")

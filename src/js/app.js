@@ -171,3 +171,20 @@ $(document).ready(function() {
     }
   });
 });
+
+const popup = document.querySelector('.popup');
+const popupClose = document.querySelectorAll('.popup-close');
+const openPopup = document.querySelectorAll('.open-popup');
+
+openPopup.forEach(el => {
+  el.addEventListener('click', (e)=>{
+    popup.classList.toggle('active')
+    body.classList.toggle('hidden')
+    popupClose.forEach(el=>{
+      el.addEventListener('click', (e)=>{
+        popup.classList.remove('active')
+        body.classList.remove('hidden')
+      })
+    })
+  })
+});
