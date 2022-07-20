@@ -2,6 +2,7 @@
     padding-top: 20px;
     padding-bottom: 58px;
     background: url(../img/top-bg.png) top / cover no-repeat;
+    z-index: 99;
     @include media(575){
         padding-top: 25px;
         padding-bottom: 45px;

@@ -12,22 +12,15 @@ html(lang="en")
             +header
             +list
             .main
-                include components/rates 
-                +rates
-                include components/objects 
-                +objects
-                include components/cost 
-                +cost  
-                include components/documents 
-                +documents    
-                include components/works 
-                +works      
-                include components/projects 
-                +projects     
-                include components/licenses 
-                +licenses     
-                include components/asks 
-                +asks     
+                .top 
+                    .top__body.container 
+                        ul.top__list 
+                            a(href="index.html").top__link Главная
+                            span.top__span /
+                            a(href="prices.html").top__link цены
+                        h1.top__title цены
+                include components/prices 
+                +prices     
                 include components/contacts 
                 +contacts       
                 include components/feedback 

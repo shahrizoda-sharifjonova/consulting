@@ -1,8 +1,27 @@
 .asks{
     padding: 100px 0;
     background: #E6EEFB;
+    position: relative;
+    isolation: isolate;
     @include media(1400){
         padding: 75px 0;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 330px;
+        height: 364px;
+        top: 130px;
+        right: 160px;
+        background: url(../img/news-before.svg) center / cover no-repeat;
+        z-index: -1;
+        @include media(1400){
+            top: 0;
+            right: 0;
+        }
+        @include media(992){
+            width: 150px;
+        }
     }
     &__title{
         margin-left: -115px;
