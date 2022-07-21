@@ -4,7 +4,7 @@ mixin prices()
             h1.prices__title.title.disable-xxl цены
             .prices__content 
                 .accordion 
-                    button(type="button").accordion__button
+                    button(type="button").accordion__button.active
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="40" y="40" width="40" height="40" rx="20" transform="rotate(-180 40 40)" fill="#D63546"/>
                             <g clip-path="url(#clip0_7329_2280)">
@@ -16,7 +16,7 @@ mixin prices()
                             </clipPath>
                             </defs>
                         </svg> Оценка недвижимости
-                    .accordion__content 
+                    .accordion__content.active 
                         .prices__wrapper 
                             .prices__top 
                                 p.prices__p.prices__item_1 Вид объектов

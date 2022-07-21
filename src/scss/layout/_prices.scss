@@ -74,6 +74,9 @@
                 position: relative;
                 width: 100%;
             }
+            &.active{
+                display: block;
+            }
         }
     }
     &__wrapper{

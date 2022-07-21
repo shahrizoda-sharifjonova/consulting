@@ -261,11 +261,12 @@
         }
     }
     .dropdown{
-        z-index: 1;
+        z-index: 9999999999999999999999999999999999999999999999999999;
         &:hover{
             .dropdown__content{
                 opacity: 1;
                 visibility: visible;
+                z-index: 999999999999999999999999999999999999999;
             }
             .dropdown__btn{
                 color: #D63546;

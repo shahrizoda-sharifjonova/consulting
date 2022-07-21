@@ -447,12 +447,13 @@
 }
 
 .list .dropdown {
-  z-index: 1;
+  z-index: 10000000000000000000000000000000000000000000000000000;
 }
 
 .list .dropdown:hover .dropdown__content {
   opacity: 1;
   visibility: visible;
+  z-index: 999999999999999800000000000000000000000;
 }
 
 .list .dropdown:hover .dropdown__btn {
@@ -3885,6 +3886,10 @@
   border-radius: 10px;
   display: none;
   margin-bottom: 30px;
+}
+
+.prices .accordion__content.active {
+  display: block;
 }
 
 .prices__wrapper {
